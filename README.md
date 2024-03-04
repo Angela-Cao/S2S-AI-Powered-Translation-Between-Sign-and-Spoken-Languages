@@ -17,6 +17,7 @@
 
 ## Data preprocessing
 - Files in the ```data_processing``` folder are a collection of tools developed to understand, clean, and process this project's data. The most important ones are explained below.
+- Processed datasets could not be uploaded due to their size, but the code to process them can be found in this repository.
 
 ### ASLLRP
 - ```preprocess_asllrp_data_new.py``` new preprocessing the ASLLRP 518 video clips using mp4 --> csv --> png. The png files were generated for each frame from the video. 
