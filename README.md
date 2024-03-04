@@ -19,7 +19,8 @@
 ## Data preprocessing
 
 - ```preprocess_asllrp_data_new.py``` new preprocessing the ASLLRP 518 video clips using mp4 --> csv --> png. The png files were generated for each frame from the video. 
-
+### WLASL
+- Links to ASL word-level videos listed in ```WLASL_v0.3 .json```. ```autoWLASL.py``` can be used to automatically download them.
 ### Extract keypoints of skeleton from the video data
 
 -  ```video_to_csv.py``` Convert a video to skeleton keypoints data (csv). The function ```sample_and_export``` in this file is the old way to sample images from the video: get 4 samples from the (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.65) from the video. 
@@ -27,7 +28,7 @@
 
 ### Generate skeleton images from the keypoints data 
 
-- ```pose_to_img_2.py``` Generate images for each frame from the csv file if at least one hand can be detected on this frame of the video.
+- ```pose_to_img.py``` Generate images for each frame from the csv file if at least one hand can be detected on this frame of the video.
 
 ### Sample from the frames of the video and combine the 4 sampled skeleton images as one image
 
@@ -54,8 +55,9 @@ python test_segmentation.py
 
 
 ## Translate sequence of glosses to spoken English
-
-- ```spoken_asl_fine_tuning.ipynb`` Fine-tune BART model "facebook/bart-large" to translate glosses to spoken English. 
+Fine-tune BART model "facebook/bart-large" to translate between gloss syntax and spoken English.
+- En to ASL: ```syntax_translator/en_to_asl (1).ipynb```
+- ASL to EN: ```syntax_translator/asl_to_en (1).ipynb```
 
 
 
