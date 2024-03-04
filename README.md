@@ -18,7 +18,8 @@
 
 ## Data preprocessing
 - Files in ```data_processing``` folder are a collection of tools developed to understand, clean, and process this project's data. The most important ones are explained below.
-###ASLLRP
+
+### ASLLRP
 - ```preprocess_asllrp_data_new.py``` new preprocessing the ASLLRP 518 video clips using mp4 --> csv --> png. The png files were generated for each frame from the video. 
 ### WLASL
 - Links to ASL word-level videos listed in ```WLASL_v0.3 .json```. ```autoWLASL.py``` can be used to automatically download them.
@@ -59,6 +60,8 @@ python test_segmentation.py
 Fine-tune BART model "facebook/bart-large" to translate between gloss syntax and spoken English.
 - En to ASL: ```syntax_translator/en_to_asl (1).ipynb```
 - ASL to EN: ```syntax_translator/asl_to_en (1).ipynb```
+
+A Streamlit application of the bidirectional fine-tuned translation models can be run using ```translator_app_streamlit.py```. ```production.py``` can also be used to demonstrate the models.
 
 
 
