@@ -1,5 +1,4 @@
-# S2S: AI-Powered Translation Between Sign and Spoken Languages
-
+# [S2S: AI-Powered Translation Between Sign and Spoken Languages](https://github.com/Angela-Cao/S2S-AI-Powered-Translation-Between-Sign-and-Spoken-Languages)
 
 
 
